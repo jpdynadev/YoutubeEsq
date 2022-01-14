@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tube';
+
+  currentRoute: string = "profile";
+
+  switchRoute(newRoute: string) {
+      this.currentRoute = newRoute;
+      console.log(this.currentRoute);
+  }
 }

@@ -1,0 +1,5 @@
+<app-nav (newRoute)="switchRoute($event)"></app-nav>
+
+<app-profile *ngIf="currentRoute == 'profile'"></app-profile>
+<app-browse *ngIf="currentRoute == 'browse'"></app-browse>
+<app-history *ngIf="currentRoute == 'history'"></app-history>
