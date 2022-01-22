@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HistoryComponent } from './history/history.component';
 import { BrowseComponent } from './browse/browse.component';
 import { CommonModule } from '@angular/common';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CommonModule } from '@angular/common';
     NavComponent,
     ProfileComponent,
     HistoryComponent,
-    BrowseComponent
+    BrowseComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
