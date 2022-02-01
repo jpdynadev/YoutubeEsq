@@ -1,5 +1,17 @@
-<app-nav (newRoute)="switchRoute($event)"></app-nav>
+<div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/502px-Logo_of_YouTube_%282015-2017%29.svg.png">
+</div>
 
-<app-profile *ngIf="currentRoute == 'profile'"></app-profile>
-<app-browse *ngIf="currentRoute == 'browse'"></app-browse>
-<app-history *ngIf="currentRoute == 'history'"></app-history>
+<app-login 
+    [loggedIn]="loggedIn"
+    (logIn)="attemptLogin($event)" 
+    *ngIf="!loggedIn" 
+    class="loginContainer">
+</app-login>
+
+<div *ngIf="loggedIn" class="container">
+    <app-nav (newRoute)="switchRoute($event)"></app-nav>
+    <app-profile *ngIf="currentRoute == 'profile'"></app-profile>
+    <app-browse *ngIf="currentRoute == 'browse'"></app-browse>
+    <app-history *ngIf="currentRoute == 'history'"></app-history>
+</div>

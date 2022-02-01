@@ -1,0 +1,18 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    align-content: center;
+    justify-content: space-between;
+    input {
+        border-radius: 1em;
+        border: 1px solid lightgrey;
+    }
+}
+
+.buttonContainer {
+    color: grey;
+    background: lightgrey;
+    border: 1px solid #d2f2ff42;
+    border-radius: 1em;
+}
